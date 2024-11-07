@@ -30,7 +30,7 @@ body{
         margin-bottom: 10px;
         position: absolute;
         left: -1%;
-        top: 1%;
+        top: 8px;
     }
     .medias p{
         width: 20px;
@@ -53,6 +53,7 @@ body{
 .container{
     max-width: 800px;
     margin: auto;
+	margin-top: 20px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -83,8 +84,8 @@ h1{
     margin-bottom: 15px;
 
     & img{
-        width: 40px;
-        height: 35px;
+        width: 30x;
+        height: 30px;
         padding-top: 5px;
     }
 }
@@ -174,10 +175,9 @@ h1{
     display: none; 
     position: fixed; 
     bottom: 20px; 
-    right: 20px; 
+    right: 20px;
+	padding: 10px 10px;
     border: none; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
     cursor: pointer; 
     z-index: 1000;
 
@@ -192,7 +192,7 @@ h1{
 
 .seta{
         position: absolute;
-        top: 4px;
+        top: 8px;
         left: 47%;
         width: 30px;
         height: 30px;
@@ -209,7 +209,7 @@ h1{
     }
     #toggleModeBtn { 
         position: absolute;
-        top: 5px; 
+        top: 8px; 
         left: 30px; 
         color: white; 
         border-radius: 5px; 
@@ -246,6 +246,9 @@ h1{
         left: 88%;
     }
     #nomeReceita:placeholder-shown{
-        font-size: 11px;
+        font-size: 13px;
+    }
+    h1{
+        font-size: 25px;
     }
 }

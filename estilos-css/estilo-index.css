@@ -95,10 +95,10 @@ body{
     position: absolute;
     width: 100%;
     height: 30px;
-    top: 1%;
+    top: 8px;
     display: flex;
     justify-content: end;
-    padding-right: 20px;
+    padding-right: 15px;
 }
 .medias p{
     width: 20px;
