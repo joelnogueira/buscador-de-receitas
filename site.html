@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconSalsa.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos-css/estilo-site.css">
+    <title> Buscador de Receitas </title>
+</head>
+
+<body>
+
+    <div id="toggleModeBtn">
+        <img src=""  class="icon">
+    </div>
+
+    <div class="seta" onclick="location.href='index.html'">
+        <img src="img/back.png" alt="seta para entrar">
+    </div>
+
+    <div class="medias">
+
+
+        <p class="media1"> <a href="https://www.instagram.com/djivencyy" target="_blank">
+            <img src="img/instagram.png" alt="instagram">
+        </a></p>
+
+        <p class="media2"> <img src="img/facebook.png" alt=""></p>
+
+        <p class="media3"> <a href="https://github.com/joelnogueira" target="_blank">
+            <img src="img/github.png" alt="github">
+        </a></p>
+
+        <p class="media4"> <a href="tel:+244927503016" target="_blank">
+            <img src="img/whatsapp.png" alt="whatsapp">
+        </a></p>
+    </div>
+
+    <div class="arrow" id="scrollTop" onclick="scrollToTop()">
+        <img src="img/back.png" alt="">
+    </div>
+
+
+    <main class="container " >
+
+        <div class="banner">
+            <img src="" alt="">
+        </div>
+        <h1>Buscador de Receitas <img src="img/iconSalsa.png" alt=""></h1>
+
+        <form class="formPesquisar">
+            <input type="text" name="nomeReceita" id="nomeReceita" placeholder="Digite o ingrediente em inglês ou clica em 'Buscar' para ver todos." class="nomeReceita">
+            <button class="btnPesquisar">Buscar</button>
+        </form>
+        <div class="loading"></div>
+        <div class="receita-lista" id="scrollImage"> </div>
+        <div class="receita-detalhes"></div>
+    </main>
+
+<script src="scripts/script-site.js"></script>
+</body>
+</html>

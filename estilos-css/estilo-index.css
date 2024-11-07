@@ -1,0 +1,165 @@
+/**
+
+* Nome do Projeto: MasterChef-Virtual "Buscador de Receitas"
+
+* Descrição: "Este site contém mais de 500 receitas de culinária, Doces e Salgados. 
+			Permite uma pesquisa fácil e responde tudo de forma detalhada com receitas 
+			e ensinando passo-a-passo para que o usuário possa fazer uma refeição de forma satisfatória,
+			e ainda inclui um video da respectiva receita que direciona ao youtube para melhor compreensão".
+
+* Autor: Joel Nogueira
+
+* Data: 2024-11-07
+
+* Última Atualização: 2024-11-07
+
+* Versão: 1.0
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outfit';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/pexels-mareefe-678414.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+    position: relative;
+}
+.principal{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo-box{
+    width: 80%;
+    cursor: default;
+    opacity: 1;
+    animation: slide2 1s linear;
+
+    & h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Kaushan Script';
+    
+    background-image: linear-gradient(to left, #61c861 50%, white);
+    background-clip: text;
+    color: transparent;
+    transition:  0.3s;
+    animation: skew 2.3s linear infinite alternate-reverse;
+    }
+    & h1:hover{
+    background-image: linear-gradient(to right, #61c861 50% , white );
+    transform: skew(15deg);
+    transition: 0.3s;
+    }
+    & .line{
+    margin: auto;
+    width: 400px;
+    height: 3px;
+    background-image: radial-gradient( #61c861, white);
+    border-radius: 8px;
+    margin-top: 10px;
+    transition:  0.2s;
+    }
+}
+@keyframes skew {
+    to{
+        transform: skew(15deg);
+    }
+}
+@keyframes slide2 {
+    from{
+        opacity: 0;
+    }
+}
+
+
+.medias{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 1%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+.medias p{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+
+    & img{
+        width: 100%;
+        object-fit: cover;
+        transition: .1s linear;
+    }
+    & img:hover{
+        transform: skew(15deg);
+        transition: .1s linear;
+        cursor: pointer;
+    }
+}
+
+.seta{
+    position: absolute;
+    top: 85%;
+    width: 60px;
+    height: 60px;
+    border-top: 1px solid #61c861;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+    animation: sobedesce 2s linear infinite  alternate;
+}
+.seta:hover{
+    border-top: 2px solid  #61c861;
+    box-shadow: inset 0px 5px 12px 0px #79c87921;
+}
+.seta img{
+    width: 35px;
+}
+@keyframes sobedesce {
+to{
+    transform: translateY(10px);
+    opacity: 0.4;
+}
+}
+
+
+
+
+/*   Responsividade do  SITE   */
+@media (max-width: 720px) {
+    .titulo-box h1{
+        font-size: 2.5em;
+        transition:  0.2s;
+    }
+    .titulo-box .line{
+        width: 250px;
+        transition:  0.2s;
+    }
+    .medias p{
+        width: 19px;
+        height: 19px;
+    }
+    
+}
